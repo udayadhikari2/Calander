@@ -6,7 +6,7 @@ function Home() {
 
     const changeMessage = () => {
         if (message == false)
-            setMessage("Hello you have clicked");
+            setMessage("you have clicked");
         else
             setMessage(false);
     };
