@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Text, View, TouchableOpacity, StyleSheet} from 'react-native'
+import { Text, View, TouchableOpacity, StyleSheet,Image} from 'react-native'
+import { Menu,Delete } from '@mui/icons-material';
 
 function Home() {
     const [message, setMessage] = useState(false);
@@ -17,6 +18,9 @@ function Home() {
             <TouchableOpacity onPress={changeMessage} style={styles.button}>
                 <Text style={styles.buttonText}>Click Me</Text>
             </TouchableOpacity>
+            <Menu/>
+            <Delete/>
+            
         </View>
     );
 }
